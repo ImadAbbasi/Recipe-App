@@ -41,7 +41,7 @@
     }
 
     function search () {
-        const query = inputElem.value;
+        const query = inputElem.value.toLowerCase();
         const results = recipes.filter(function (recipe) {
             return (recipe.title.toLowerCase().includes(query) ||
             recipe.ingredients.join(" ").toLowerCase().includes(query));
